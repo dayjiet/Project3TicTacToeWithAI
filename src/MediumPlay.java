@@ -1,7 +1,7 @@
 public class MediumPlay {
     /**
      * 13. Method implements computer's move with medium level
-     * */
+     */
     public static void mediumPlay() {
         if (XNext.xNext()) {
             if (checkMove('X')) {
@@ -28,7 +28,7 @@ public class MediumPlay {
 
     /**
      * 14. Method checks the empty cells on the board
-     * */
+     */
     public static boolean checkMove(char mark) {
         for (int row = 0; row < PlayGame.NUM_ROWS; row++) {
             for (int col = 0; col < PlayGame.NUM_COLS; col++) {

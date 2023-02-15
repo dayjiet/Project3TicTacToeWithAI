@@ -2,9 +2,10 @@ import java.util.Random;
 
 public class EasyPlay {
     static Random randomGenerator = new Random();
+
     /**
      * 12. Method implements computer's move with easy level
-     * */
+     */
     public static void easyPlay() {
         int row, col;
 

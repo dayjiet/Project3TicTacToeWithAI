@@ -1,7 +1,7 @@
 public class UserPlay {
     /**
      * 11. Method implements user's move
-     * */
+     */
     public static void userPlay() {
         System.out.print("Enter the coordinates: > ");
 

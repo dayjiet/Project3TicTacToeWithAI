@@ -7,7 +7,8 @@
     <name>Project #3. Tic-Tac-Toe with AI</name>
     <description>This Java code implements the Tic-Tac-Toe game with various game modes. It allows you to play
         against another player or against the computer. The game has three levels of difficulty for computer
-        players: easy, medium, and hard</description>
+        players: easy, medium, and hard
+    </description>
 
     <groupId>java102022.dayjiet</groupId>
     <artifactId>Project3TicTacToeWithAI</artifactId>

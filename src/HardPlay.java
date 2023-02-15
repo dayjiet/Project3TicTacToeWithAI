@@ -1,7 +1,7 @@
 public class HardPlay {
     /**
      * 15. Method implements computer's move with hard level
-     * */
+     */
     public static void hardPlay() {
         int bestRow = -1, bestCol = -1;
 

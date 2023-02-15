@@ -1,7 +1,7 @@
 public class CheckInput {
     /**
      * 18. Method checks if the cell is already occupied
-     * */
+     */
     public static void checkInput(int row, int col) {
         if (cellIsBusy(row, col)) {
             redoMove();
@@ -12,14 +12,14 @@ public class CheckInput {
 
     /**
      * 19. Method that checks if the cell is occupied
-     * */
+     */
     public static boolean cellIsBusy(int row, int col) {
         return PlayGame.board[row - 1][col - 1] == 'X' || PlayGame.board[row - 1][col - 1] == 'O';
     }
 
     /**
      * 20. Method redoes the previous move
-     * */
+     */
     public static void redoMove() {
         if (XNext.xNext()) {
             if ("user".equals(PlayGame.player1)) {
@@ -36,7 +36,7 @@ public class CheckInput {
 
     /**
      * 21. Method implements the next move
-     * */
+     */
     public static void makeMove(int row, int col) {
         if (XNext.xNext()) {
             xMove(row, col);
@@ -47,7 +47,7 @@ public class CheckInput {
 
     /**
      * 22. Method implements X's move
-     * */
+     */
     public static void xMove(int row, int col) {
         switch (PlayGame.player1) {
             case "easy" -> System.out.println("Making move level \"easy\"");
@@ -64,7 +64,7 @@ public class CheckInput {
 
     /**
      * 23. Method implements O's move
-     * */
+     */
     public static void oMove(int row, int col) {
         switch (PlayGame.player2) {
             case "easy" -> System.out.println("Making move level \"easy\"");
@@ -81,7 +81,7 @@ public class CheckInput {
 
     /**
      * 24. Method resets the game
-     * */
+     */
     public static void resetGame() {
         PlayGame.board = new char[][]{
                 {' ', ' ', ' '},

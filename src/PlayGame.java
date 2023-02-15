@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class PlayGame {
     static Scanner inputScanner = new Scanner(System.in);
     static String currentGameMode;
@@ -13,7 +14,7 @@ public class PlayGame {
 
     /**
      * 1. Method displays the game options, parses the input command, and starts the game if the input is valid
-     * */
+     */
     public static void playGame() {
         System.out.print("Input command: > ");
 

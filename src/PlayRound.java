@@ -1,7 +1,7 @@
 public class PlayRound {
     /**
      * 3. Method checks the state of the Tic-Tac-Toe game and returns the result (win, draw, or continue playing)
-     * */
+     */
     public static void playRound() {
         int row;
         int col;
@@ -50,7 +50,7 @@ public class PlayRound {
 
     /**
      * 4. Method checks for X or O win in the rows
-     * */
+     */
     public static boolean checkHorizontal(int row) {
         return PlayGame.board[row][0] == PlayGame.board[row][1]
                 && PlayGame.board[row][1] == PlayGame.board[row][2]
@@ -59,7 +59,7 @@ public class PlayRound {
 
     /**
      * 5. Method checks for X or O win in the columns
-     *  */
+     */
     public static boolean checkVertical(int column) {
         return PlayGame.board[0][column] == PlayGame.board[1][column]
                 && PlayGame.board[1][column] == PlayGame.board[2][column]
@@ -68,7 +68,7 @@ public class PlayRound {
 
     /**
      * 6. Method checks for X or O win in the diagonals
-     * */
+     */
     public static boolean checkDiagonal() {
         return (PlayGame.board[0][0] == PlayGame.board[1][1]
                 && PlayGame.board[1][1] == PlayGame.board[2][2]
@@ -80,7 +80,7 @@ public class PlayRound {
 
     /**
      * 7. Method checks for draw conditions
-     * */
+     */
     public static boolean checkDraw() {
         boolean isDraw = true;
         for (int row = 0; row < PlayGame.NUM_ROWS; row++) {
@@ -96,7 +96,7 @@ public class PlayRound {
 
     /**
      * 8. Method returns player1.
-     * */
+     */
     public static void playerOne() {
         switch (PlayGame.player1) {
             case "user" -> UserPlay.userPlay();
@@ -108,7 +108,7 @@ public class PlayRound {
 
     /**
      * 9. Method returns player2
-     * */
+     */
     public static void playerTwo() {
         switch (PlayGame.player2) {
             case "user" -> UserPlay.userPlay();
