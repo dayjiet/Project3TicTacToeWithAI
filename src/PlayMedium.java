@@ -1,9 +1,9 @@
-public class MediumPlay {
+public class PlayMedium {
     /**
      * 13. Method implements computer's move with medium level
      */
-    public static void mediumPlay() {
-        if (XNext.xNext()) {
+    public static void playMedium() {
+        if (IsXNext.isXNext()) {
             if (checkMove('X')) {
                 return;
             }
@@ -12,7 +12,7 @@ public class MediumPlay {
                 return;
             }
 
-            EasyPlay.easyPlay();
+            PlayEasy.playEasy();
         } else {
             if (checkMove('O')) {
                 return;
@@ -22,7 +22,7 @@ public class MediumPlay {
                 return;
             }
 
-            EasyPlay.easyPlay();
+            PlayEasy.playEasy();
         }
     }
 

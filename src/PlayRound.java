@@ -40,7 +40,7 @@ public class PlayRound {
             System.out.println();
             CheckInput.resetGame();
         } else {
-            if (XNext.xNext()) {
+            if (IsXNext.isXNext()) {
                 playerOne();
             } else {
                 playerTwo();
@@ -99,10 +99,10 @@ public class PlayRound {
      */
     public static void playerOne() {
         switch (PlayGame.player1) {
-            case "user" -> UserPlay.userPlay();
-            case "easy" -> EasyPlay.easyPlay();
-            case "medium" -> MediumPlay.mediumPlay();
-            case "hard" -> HardPlay.hardPlay();
+            case "user" -> PlayUser.playUser();
+            case "easy" -> PlayEasy.playEasy();
+            case "medium" -> PlayMedium.playMedium();
+            case "hard" -> PlayHard.playHard();
         }
     }
 
@@ -111,10 +111,10 @@ public class PlayRound {
      */
     public static void playerTwo() {
         switch (PlayGame.player2) {
-            case "user" -> UserPlay.userPlay();
-            case "easy" -> EasyPlay.easyPlay();
-            case "medium" -> MediumPlay.mediumPlay();
-            case "hard" -> HardPlay.hardPlay();
+            case "user" -> PlayUser.playUser();
+            case "easy" -> PlayEasy.playEasy();
+            case "medium" -> PlayMedium.playMedium();
+            case "hard" -> PlayHard.playHard();
         }
     }
 }

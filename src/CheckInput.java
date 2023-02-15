@@ -21,7 +21,7 @@ public class CheckInput {
      * 20. Method redoes the previous move
      */
     public static void redoMove() {
-        if (XNext.xNext()) {
+        if (IsXNext.isXNext()) {
             if ("user".equals(PlayGame.player1)) {
                 System.out.println("This cell is occupied! Choose another one!");
             }
@@ -38,7 +38,7 @@ public class CheckInput {
      * 21. Method implements the next move
      */
     public static void makeMove(int row, int col) {
-        if (XNext.xNext()) {
+        if (IsXNext.isXNext()) {
             xMove(row, col);
         } else {
             oMove(row, col);

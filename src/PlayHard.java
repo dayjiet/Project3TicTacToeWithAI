@@ -1,12 +1,12 @@
-public class HardPlay {
+public class PlayHard {
     /**
      * 15. Method implements computer's move with hard level
      */
-    public static void hardPlay() {
+    public static void playHard() {
         int bestRow = -1, bestCol = -1;
 
         int bestScore;
-        if (XNext.xNext()) {
+        if (IsXNext.isXNext()) {
             bestScore = Integer.MIN_VALUE;
             for (int row = 0; row < PlayGame.NUM_ROWS; row++) {
                 for (int col = 0; col < PlayGame.NUM_COLS; col++) {
