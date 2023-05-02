@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class PlayGame {
+    static Scanner inputScanner = new Scanner(System.in);
+    static String currentGameMode;
+    static String player1, player2;
+    static char[][] board = {
+            {' ', ' ', ' '},
+            {' ', ' ', ' '},
+            {' ', ' ', ' '}
+    };
+    final static int NUM_ROWS = 3, NUM_COLS = 3;
+    static int numXMoves = 0, numOMoves = 0;
+
+    /**
+     * 1. Method displays the game options, parses the input command, and starts the game if the input is valid
+     */
+    public static void playGame() {
+        System.out.print("Input command: > ");
+
+        String cmd = inputScanner.nextLine();
+
+        if ("exit".equals(cmd)) {
+            return;
+        }
+
+        String[] cmdArr = cmd.split(" ");
+
+        if ("start".equals(cmdArr[0]) && cmdArr.length == 3) {
+            currentGameMode = cmdArr[0];
+            player1 = cmdArr[1];
+            player2 = cmdArr[2];
+
+            boolean userVsUser = ("user".equals(player1) && "user".equals(player2));
+
+            boolean userVsComp = ("user".equals(player1)
+                    && ("easy".equals(player2) || "medium".equals(player2) || "hard".equals(player2)));
+
+            boolean compVsUser = ("user".equals(player2)
+                    && ("easy".equals(player1) || "medium".equals(player1) || "hard".equals(player1)));
+
+            boolean compVsComp = (("easy".equals(player1) || "medium".equals(player1) || "hard".equals(player1))
+                    && ("easy".equals(player2) || "medium".equals(player2) || "hard".equals(player2)));
+
+            if (userVsUser || userVsComp || compVsUser || compVsComp) {
+                DisplayBoard.displayBoard();
+                PlayRound.playRound();
+            } else {
+                System.out.println("Bad parameters!");
+                playGame();
+            }
+        } else {
+            System.out.println("Bad parameters!");
+            playGame();
+        }
+    }
+}
