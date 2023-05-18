@@ -16,7 +16,6 @@ https://hyperskill.org/projects/81?category=2&track=12
 This project is an implementation of the classic game Tic-Tac-Toe, also known as Noughts and crosses or Xs and Os, in Java. The program allows users to play against each other or against a computer opponent with varying difficulty levels.
 
 ## Features
-
 - Multiple game modes: play against another player or against the computer with different levels of difficulty.
 - User input validation: the code checks for valid user inputs, and informs the player if the input is incorrect.
 - Game board display: the current state of the game board is displayed after each move, including the X and O moves
@@ -26,7 +25,6 @@ This project is an implementation of the classic game Tic-Tac-Toe, also known as
 - Reset game: the code allows you to reset the game to start over after each round.
 
 ## Usage
-
 To start the Tic-Tac-Toe game, run the main method in the TicTacToe class:
 ```java
 public class TicTacToe {
@@ -46,17 +44,17 @@ Enter the coordinates: > 2 3
 The game will continue until there is a winner or a draw. You can exit the game at any time by entering "exit" as the command.
 
 ## Feedback
+During the development of the Tic-Tac-Toe with AI project, I acquired valuable knowledge and skills in planning and implementing a complex program from scratch. This project allowed me to gain proficiency in utilizing classes and methods effectively, handling errors, and processing user input. Furthermore, I was able to grasp the principles of Object-Oriented Programming (OOP) and apply them in practice.
 
-1. DisplayBoard: This class provides a method displayBoard() that displays the current state of the game board, including the X and O moves count. The board is represented as a 3x3 array.
-2. PlayGame: The playGame() method in this class handles the game options, parses the input command, and starts the game if the input is valid. It determines the game mode (user vs user, user vs computer, or computer vs computer) and initializes the necessary variables. The game mode options include "easy," "medium," and "hard" difficulty levels for the computer opponent.
-3. PlayRound: This class contains the playRound() method, which checks the state of the Tic-Tac-Toe game and returns the result (win, draw, or continue playing). It checks for X or O wins in rows, columns, and diagonals. If there is no win or draw, it proceeds to the next move by calling the appropriate method based on the player type.
-4. CheckInput: The checkInput() method in this class verifies if a cell is already occupied and takes the appropriate action. If the cell is occupied, it prompts the user to choose another one. It also includes methods to check if a cell is occupied, redo the previous move, make a move, and reset the game.
-5. IsXNext: This class provides the isXNext() method, which checks if it is X's turn to play based on the number of X and O moves.
-6. PlayUser: This class implements the user's move by accepting input coordinates and validating them. It ensures that the coordinates are within the valid range of 1 to 3 and checks if the input is numeric.
-7. PlayHard: The playHard() method in this class implements the computer's move with the hard difficulty level. It uses the minimax algorithm to calculate the best move for the computer player. The algorithm evaluates the current state of the game and assigns scores to different outcomes to determine the optimal move.
+One of the major challenges I encountered was designing and implementing the AI player's logic to provide a challenging and intelligent opponent. Overcoming this obstacle required careful consideration of game strategies and decision-making algorithms. Through iterative testing and refinement, I was able to create an AI player that offered engaging gameplay.
+
+The project also provided me with a deeper understanding of the game mechanics and strategies of Tic-Tac-Toe. I learned to anticipate and handle various scenarios, ensuring a fair and enjoyable gaming experience for both human and AI players.
+
+By completing this project, I not only enhanced my programming abilities but also developed problem-solving skills and the ability to manage and organize a complex software project. This experience has further solidified my understanding of OOP principles and their application in real-world scenarios.
+
+In summary, the Tic-Tac-Toe with AI project was a rewarding learning experience that allowed me to apply my knowledge of classes, methods, error handling, and user input processing. It deepened my understanding of OOP and improved my problem-solving skills, enabling me to develop a well-designed and functional program.
 
 ## Contributing
-
 Contributions to this project are welcome. If you would like to contribute, please follow these guidelines:
 1. Fork the repository and create a new branch for your contribution.
 2. Make your changes, ensuring adherence to the project's coding style and guidelines.
