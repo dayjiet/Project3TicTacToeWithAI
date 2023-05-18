@@ -1,3 +1,5 @@
+package gaming.base;
+
 public class DisplayBoard {
     final static int NUM_ROWS = 3, NUM_COLS = 3;
 

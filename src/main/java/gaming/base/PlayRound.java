@@ -1,3 +1,12 @@
+package gaming.base;
+
+import gaming.mode.PlayUser;
+import gaming.util.CheckInput;
+import gaming.util.IsXNext;
+import gaming.mode.PlayEasy;
+import gaming.mode.PlayHard;
+import gaming.mode.PlayMedium;
+
 public class PlayRound {
     /**
      * 3. Method checks the state of the Tic-Tac-Toe game and returns the result (win, draw, or continue playing)

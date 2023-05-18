@@ -1,3 +1,10 @@
+package gaming.mode;
+
+import gaming.util.CheckInput;
+import gaming.util.IsXNext;
+import gaming.base.PlayGame;
+import gaming.base.PlayRound;
+
 public class PlayMedium {
     /**
      * 13. Method implements computer's move with medium level

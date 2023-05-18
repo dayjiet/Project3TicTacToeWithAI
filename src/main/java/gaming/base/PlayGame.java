@@ -1,16 +1,20 @@
+package gaming.base;
+
 import java.util.Scanner;
 
 public class PlayGame {
-    static Scanner inputScanner = new Scanner(System.in);
+    public static Scanner inputScanner = new Scanner(System.in);
     static String currentGameMode;
-    static String player1, player2;
-    static char[][] board = {
+    public static String player1;
+    public static String player2;
+    public static char[][] board = {
             {' ', ' ', ' '},
             {' ', ' ', ' '},
             {' ', ' ', ' '}
     };
-    final static int NUM_ROWS = 3, NUM_COLS = 3;
-    static int numXMoves = 0, numOMoves = 0;
+    public static final int NUM_ROWS = 3, NUM_COLS = 3;
+    public static int numXMoves = 0;
+    public static int numOMoves = 0;
 
     /**
      * 1. Method displays the game options, parses the input command, and starts the game if the input is valid

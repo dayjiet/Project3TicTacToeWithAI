@@ -1,3 +1,8 @@
+package gaming.mode;
+
+import gaming.base.PlayGame;
+import gaming.util.CheckInput;
+
 public class PlayUser {
     /**
      * 11. Method implements user's move

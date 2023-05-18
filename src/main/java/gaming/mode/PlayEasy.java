@@ -1,3 +1,8 @@
+package gaming.mode;
+
+import gaming.util.CheckInput;
+import gaming.base.PlayGame;
+
 import java.util.Random;
 
 public class PlayEasy {

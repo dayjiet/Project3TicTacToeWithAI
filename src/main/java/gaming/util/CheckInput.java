@@ -1,3 +1,9 @@
+package gaming.util;
+
+import gaming.base.DisplayBoard;
+import gaming.base.PlayGame;
+import gaming.base.PlayRound;
+
 public class CheckInput {
     /**
      * 18. Method checks if the cell is already occupied
