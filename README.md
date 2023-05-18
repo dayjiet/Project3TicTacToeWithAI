@@ -1,5 +1,7 @@
 # Tic-Tac-Toe with AI (Java)
-```https://hyperskill.org/projects/81?category=2&track=12```
+```html
+https://hyperskill.org/projects/81?category=2&track=12
+```
 
 ## Table of Contents
 - [Description](#description)
@@ -26,7 +28,7 @@ This project is an implementation of the classic game Tic-Tac-Toe, also known as
 ## Usage
 
 To start the Tic-Tac-Toe game, run the main method in the TicTacToe class:
-```agsl
+```java
 public class TicTacToe {
     public static void main(String[] args) {
         PlayGame.playGame();
@@ -34,11 +36,11 @@ public class TicTacToe {
 }
 ```
 The program will prompt you to enter a command. Valid commands are of the format start player1 player2, where player1 and player2 can be "user," "easy," "medium," or "hard." For example, to start a game between a user and a computer opponent with hard difficulty, enter:
-```agsl
+```java
 Input command: > start user hard
 ```
 The game board will be displayed, and you can take turns by entering the coordinates of the cell you want to mark. Coordinates should be entered as two space-separated numbers between 1 and 3. For example, to mark the cell at row 2, column 3, enter:
-```agsl
+```java
 Enter the coordinates: > 2 3
 ```
 The game will continue until there is a winner or a draw. You can exit the game at any time by entering "exit" as the command.
@@ -68,5 +70,5 @@ This project has no external dependencies. It is written in Java and utilizes on
 
 ## Contact Information
 For any questions, issues, or feedback regarding this project, please contact the project maintainer:
-- Name: Daulet Toganbayev
-- Email: daulet.toganbayev@gmail.com
+- Name: ```Daulet Toganbayev```
+- Email: ```daulet.toganbayev@gmail.com```
