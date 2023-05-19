@@ -43,16 +43,6 @@ Enter the coordinates: > 2 3
 ```
 The game will continue until there is a winner or a draw. You can exit the game at any time by entering "exit" as the command.
 
-To run the Project3TicTacToeWithAI-1.0-SNAPSHOT.jar file, perform the following steps:
-
-1. Download the JAR file.
-2. Open a terminal or command prompt: Navigate to the directory where the JAR file is located.
-3. Run the JAR file: Enter the following command to execute the JAR file:
-```shell
-java -jar Project3TicTacToeWithAI-1.0-SNAPSHOT.jar
-```
-4. Follow the on-screen instructions: The program will display a menu with different options. Enter the corresponding number to perform the desired action.
-
 ## Feedback
 During the development of the Tic-Tac-Toe with AI project, I acquired valuable knowledge and skills in planning and implementing a complex program from scratch. This project allowed me to gain proficiency in utilizing classes and methods effectively, handling errors, and processing user input. Furthermore, I was able to grasp the principles of Object-Oriented Programming (OOP) and apply them in practice.
 
