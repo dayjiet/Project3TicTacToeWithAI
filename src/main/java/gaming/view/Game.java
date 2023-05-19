@@ -1,8 +1,12 @@
-package gaming.base;
+package gaming.view;
 
 import java.util.Scanner;
 
-public class PlayGame {
+/**
+ * The Game class represents the game logic and player interactions in the Tic-Tac-Toe game.
+ * It handles the input commands, validates them, and starts the game.
+ */
+public class Game {
     public static Scanner inputScanner = new Scanner(System.in);
     static String currentGameMode;
     public static String player1;
@@ -17,9 +21,12 @@ public class PlayGame {
     public static int numOMoves = 0;
 
     /**
-     * 1. Method displays the game options, parses the input command, and starts the game if the input is valid
+     * Displays the game options, parses the input command, and starts the game if the input is valid.
+     * The input command should be in the format "start [player1] [player2]".
+     * Valid player options are "user", "easy", "medium", and "hard".
+     * If the input command is not valid, the user is prompted to enter a valid command.
      */
-    public static void playGame() {
+    public static void play() {
         System.out.print("Input command: > ");
 
         String cmd = inputScanner.nextLine();
@@ -47,15 +54,15 @@ public class PlayGame {
                     && ("easy".equals(player2) || "medium".equals(player2) || "hard".equals(player2)));
 
             if (userVsUser || userVsComp || compVsUser || compVsComp) {
-                DisplayBoard.displayBoard();
-                PlayRound.playRound();
+                Board.display();
+                Round.play();
             } else {
                 System.out.println("Bad parameters!");
-                playGame();
+                play();
             }
         } else {
             System.out.println("Bad parameters!");
-            playGame();
+            play();
         }
     }
 }

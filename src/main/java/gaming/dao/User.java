@@ -1,16 +1,24 @@
-package gaming.mode;
+package gaming.dao;
 
-import gaming.base.PlayGame;
-import gaming.util.CheckInput;
+import gaming.view.Game;
+import gaming.service.Input;
 
-public class PlayUser {
+/**
+ * The User class represents a user player in the Tic-Tac-Toe game.
+ * It implements the user's move by accepting input coordinates from the user.
+ */
+public class User {
+
     /**
-     * 11. Method implements user's move
+     * Implements the user's move in the game.
+     * It prompts the user to enter the coordinates.
+     * The input coordinates are validated and processed.
+     * If the coordinates are invalid, the user is prompted to enter valid coordinates.
      */
-    public static void playUser() {
+    public static void play() {
         System.out.print("Enter the coordinates: > ");
 
-        String inputCoordinates = PlayGame.inputScanner.nextLine();
+        String inputCoordinates = Game.inputScanner.nextLine();
         String[] inputCoordinatesArray = inputCoordinates.split(" ");
 
         if (inputCoordinatesArray.length == 2) {
@@ -20,17 +28,17 @@ public class PlayUser {
 
                 if (row < 1 || row > 3 || col < 1 || col > 3) {
                     System.out.println("Coordinates should be from 1 to 3!");
-                    playUser();
+                    play();
                 } else {
-                    CheckInput.checkInput(row, col);
+                    Input.check(row, col);
                 }
             } catch (NumberFormatException nfe) {
                 System.out.println("You should enter numbers!");
-                playUser();
+                play();
             }
         } else {
             System.out.println("You should enter numbers!");
-            playUser();
+            play();
         }
     }
 }
