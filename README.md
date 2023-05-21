@@ -64,7 +64,7 @@ Please note that all contributions will be reviewed and subject to approval.
 This project has no external dependencies. It is written in Java and utilizes only standard libraries and classes available in the Java Development Kit (JDK).
 
 ## Contact Information
-If you have any questions, suggestions, or feedback regarding the Cinema Room Manager project, please contact:
+If you have any questions, suggestions, or feedback regarding the Tic-Tac-Toe with AI project, please contact:
 - Project Developer: ```Daulet Toganbayev```
 - Email: ```daulet.toganbayev@gmail.com```
 
